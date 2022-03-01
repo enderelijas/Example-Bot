@@ -12,6 +12,7 @@ client.remove_command('help')
 async def on_ready():
     print('Bot online.')
 
+# sends an embed message when a user joins the server
 @client.event
 async def on_member_join(member: discord.Member):
     channel = discord.utils.get(member.guild.channels, name='welcome')
